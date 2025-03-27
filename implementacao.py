@@ -331,7 +331,7 @@ def creative_search(queries: dict[str, str]):
                             "match": {
                                 "processed_text": {
                                     "query": query,
-                                    "boost": 1.0  # Ajuste o boost conforme necessário
+                                    "boost": 1.0
                                 }
                             }
                         }
@@ -349,8 +349,8 @@ def creative_search(queries: dict[str, str]):
                             "fuzzy": {
                                 "processed_text": {
                                     "value": query,
-                                    "fuzziness": "AUTO",  # Ou ajuste conforme necessário
-                                    "boost": 1.0  # Ajuste o boost conforme necessário
+                                    "fuzziness": "AUTO",
+                                    "boost": 1.0  
                                 }
                             }
                         }
